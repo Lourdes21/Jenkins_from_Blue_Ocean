@@ -7,5 +7,15 @@ pipeline {
       }
     }
 
+    stage('') {
+      steps {
+        timeout(time: 2, unit: 'SECONDS') {
+          echo 'hello'
+        }
+
+        echo 'this is a message'
+      }
+    }
+
   }
 }
